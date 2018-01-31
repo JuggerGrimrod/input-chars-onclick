@@ -1,4 +1,4 @@
-# Input Special Characters into Form Field onClick (with Bootstrap 3.3.7 CSS) v1.0.0 (@ /JuggerGrimrod/input-chars-onclick)
+# Input Special Characters into Form Field onClick (includes Bootstrap 3.3.7 CSS for layout and UI elements) v1.0.0 (@ /JuggerGrimrod/input-chars-onclick)
 
 ## This Git repository contains markup, style and script file assets for appending special characters into a text-field when a button click event is triggered.
 
@@ -27,6 +27,6 @@ No future enhancements are planned for this code snippet.
 
 That's it.  Enjoy!
 
-##  Input Special Characters into Form Field onClick (with Bootstrap 3.3.7 CSS) README.md file v1.0 
+##  Input Special Characters into Form Field onClick (includes Bootstrap 3.3.7 CSS for layout and UI elements) README.md file v1.0 
 
 ### Free to all via GNU General Public License v3.0.
