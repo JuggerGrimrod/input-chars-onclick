@@ -8,12 +8,12 @@ The form includes the following elements and options:
 
 * ### HTML form /index.html file: 
   This file contains links to local **JS/jQuery** and **CSS** assets (default), and CDN links to **JS/jQuery** and **CSS** assets (optional):
-  * Example input text-field with inline button-group using **Bootstrap 3.3.7 CSS** for layout and button UI elements via **/css/bootstrap.min.css**.  
+  * Example input text-field with inline button-group using **Bootstrap 3.3.7 CSS** for layout and button UI elements via **/css/bootstrap.3.3.7.min.css**.  
   * CDN (Content Delivery Network) assets:
       * **netdna.bootstrapcdn.com** Bootstrap 3.3.7 minified css file.
       * **ajax.googleapis.com** jQuery v2.0.3 minified library file.
-  * jQuery script placed before &lt;/HEAD&gt; which defines the button click-events, characters to append and cursor *.focus()* functionality.
-  * Custom CSS placed in &lt;HEAD&gt;&lt;/HEAD&gt;.  
+  * Custom CSS placed in &lt;HEAD&gt;&lt;/HEAD&gt; on lines *12 - 21*.
+  * jQuery script placed before &lt;/HEAD&gt; on lines *24 - 46*: this script block defines the button click-events, characters to append and cursor *.focus()* functionality.    
 
 * ### jQuery 2.0.3 library file at **/js/jquery.min.js**.
 
