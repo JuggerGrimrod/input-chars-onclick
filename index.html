@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Input Special Characters into Form Field onClick</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="Input Special Characters into Form Field onClick Github Demo" name="description" />
+        <meta content="Daryl McCormick" name="author" />  
+        <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> --> <!-- load bootstrap 3.3.7 css via CDN -->
+        <link rel="stylesheet" href="css/bootstrap.3.3.7.min.css" /> <!-- or load locally -->
+        <style> /*load in-line css */
+            .control-label{line-height:1.44;font-weight:600}
+            .input-xlarge-constrained{display:inline-block;width:420px !important;max-width:420px !important;height:34px !important}            
+            .btn-group-solid{top:-1px;height:34px !important} 
+            .btn-group>.btn:first-child{margin-left:0}
+            .btn{line-height:1.44;outline:0 !important;height:34px !important}
+            .btn,.form-control{box-shadow:none !important}  
+            .btn.default{color:#666;background-color:#e1e5ec;border-color:#e1e5ec}
+            .btn.default:hover{color:#666;background-color:#c2cad8;border-color:#bcc5d4}
+        </style>  
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> --> <!-- load jquery 2.0.3 js via CDN -->
+        <script src="js/jquery.min.js"></script> <!-- or load locally -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                // set special characters in form text-input field (NOT html encoded entity names [&reg;, &copy; and &trade;] as encoded entities would be appended as literal strings)
+                $(function(){
+                    $('.registeredBtn').on('click', function(){
+                        var text = $(this).parent().prev('input[type=text]'); // seeks sibling INPUT of parent container div
+                        text.val(text.val() + '®'); // appends registered character to input field
+                        $('#textField').focus(); // return cursor to input field  
+                    });
+                    $('.copyrightBtn').on('click', function(){
+                        var text = $(this).parent().prev('input[type=text]'); // seeks sibling INPUT of parent container div
+                        text.val(text.val() + '©'); // appends copyright character to input field
+                        $('#textField').focus(); // return cursor to input field
+                    });
+                    $('.trademarkBtn').on('click', function(){
+                        var text = $(this).parent().prev('input[type=text]'); // seeks sibling INPUT of parent container div
+                        text.val(text.val() + '™'); // appends trademark character to input field
+                        $('#textField').focus(); // return cursor to input field 
+                    });
+                    // ...you get the idea.  You can append a variety of special characters to an input field using this method.
+                });
+            });
+        </script>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                    <h1>Add Special Characters into Form Field onClick<br /><small>(includes Bootstrap 3.3.7 CSS for layout and UI elements)</small></h1>
+
+                    <h4>Click the in-line buttons after the text-field to append the corresponding characters into the field.</h4>
+
+                    <br /><br />
+
+                    <div class="form-horizontal">  
+                        <div class="form-group">
+                            <label class="col-xs-12 col-sm-3 col-md-3 col-lg-3 control-label">Text Field Label</label>
+                            <div class="col-xs-12 col-sm-3 col-md-9 col-lg-9">                                                                   
+                                <input type="text" class="form-control input-xlarge input-xlarge-constrained" id="textField" placeholder="Placeholder Text" />
+                                <div class="btn-group btn-group-solid">
+                                    <button type="button" class="btn default registeredBtn">&reg;</button>
+                                    <button type="button" class="btn default copyrightBtn">&copy;</button>
+                                    <button type="button" class="btn default trademarkBtn">&trade;</button>
+                                </div>
+                            </div>
+                        </div>                                                                          
+                    </div><!-- /.form-horizontal -->
+
+                </div><!-- /.col-md-12 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->  
+
+    </body>
+</html>
