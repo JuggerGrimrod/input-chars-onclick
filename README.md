@@ -2,7 +2,7 @@
 
 ## This Git repository contains markup, style and script file assets for appending special characters into a text-field when a button click event is triggered.
 
-This code snippet was built to fulfill a requirement to append a registered mark, a trademark symbol and/or a copyright symbol into a text-field from in-line form button clicks.
+This code snippet was built to fulfill a requirement to append a registered mark, a trademark symbol and/or a copyright symbol into a form text-input field from in-line form button clicks.
 
 The form includes the following elements and options:
 
@@ -12,13 +12,12 @@ The form includes the following elements and options:
   * CDN (Content Delivery Network) assets:
       * **netdna.bootstrapcdn.com** Bootstrap 3.3.7 minified css file.
       * **ajax.googleapis.com** jQuery v2.0.3 minified library file.
-  * jQuery script before &lt;/body&gt; which defines the button click-events, characters to append and cursor *.focus()* functionality.
-
-* ### Custom CSS file at **/css/styles.css**.  
+  * jQuery script placed before &lt;/HEAD&gt; which defines the button click-events, characters to append and cursor *.focus()* functionality.
+  * Custom CSS placed in &lt;HEAD&gt;&lt;/HEAD&gt;.  
 
 * ### jQuery 2.0.3 library file at **/js/jquery.min.js**.
 
-* ### Bootstrap 3.3.7 CSS file at **/css/bootstrap.min.css**.  
+* ### Bootstrap 3.3.7 CSS file at **/css/bootstrap.3.3.7.min.css**.  
 
 This code snippet was tested from a production Linux server running PHP v5.6.33 in Chrome 63.0.3239.132, Firefox 57.0.4, IE Edge, IE10 and IE9 (emulated via IE Edge console), Windows Safari 5.1.7 (lol...but seriously, this obsolete Safari browser still retains some value as a sort of 'indicator-species': when something 'normal' fails in Windows Safari, it'll more than likely also fail in iOS Safari Mobile), iOS Safari Mobile via iPad Air 2, and Android Chrome.
 
